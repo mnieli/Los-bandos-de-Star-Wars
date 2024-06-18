@@ -1,0 +1,232 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    line-height: 1.6;
+    color: #333;
+    background-image: url('https://images3.alphacoders.com/810/thumb-1920-810918.jpg'); 
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 20px;
+}
+
+.content-wrapper {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 1200px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.8em;
+    margin-top: 30px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+/* Clase para el imperio */
+.imperio {
+    background-color: #8B0000;
+    color: white;
+}
+
+/* Clase para rebeldes */
+.rebeldes {
+    background-color: #0a72d4;
+    color: white;
+}
+
+/* ID para Darth Vader */
+#darth-vader {
+    font-size: 1.5em;
+    text-align: center;
+    border: 3px dashed #000;
+    letter-spacing: 2px; 
+    padding: 15px; 
+}
+
+/* ID para Storm trooper */
+#imperio-soldier {
+    font-size: 1.5em;
+    text-align: center;
+    border: 3px dashed #000;
+    letter-spacing: 2px; 
+    padding: 15px;
+}
+
+/* ID para Luke Skywalker */
+#luke-skywalker {
+    font-style: italic;
+    text-align: center;
+    border: 3px dashed #000;
+    letter-spacing: 2px; 
+    padding: 15px; 
+}
+
+#Caminante {
+    font-size: 1.5em;
+    text-align: center;
+    border: 3px dashed #000;
+    letter-spacing: 2px; 
+    padding: 15px;
+}
+
+#tie-fighter {
+    font-size: 1.5em;
+    text-align: center;
+    border: 3px dashed #000;
+    letter-spacing: 2px; 
+    padding: 15px;
+}
+
+/* Clase para los soldados que les defina un borde a rayas */
+#soldado-cualunque {
+    font-size: 1.5em;
+    text-align: center;
+    border: 3px dashed #000;
+    letter-spacing: 2px; 
+    padding: 15px;
+}
+
+#tanque {
+    font-size: 1.5em;
+    text-align: center;
+    border: 3px dashed #000;
+    letter-spacing: 2px; 
+    padding: 15px;
+}
+
+#x-wing {
+    font-size: 1.5em;
+    text-align: center;
+    border: 3px dashed #000;
+    letter-spacing: 2px; 
+    padding: 15px;
+    text-transform: uppercase;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Centra horizontalmente la imagen */
+    border-radius: 10px;
+}
+
+/* Estilos adicionales del contenedor para alineación */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    aspect-ratio: 16 / 9; /* Mantiene una relación de aspecto 16:9 */
+}
+
+.container img {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin: 10px 0; /* Espacio alrededor de las imágenes */
+}
+
+/* Flexbox para mejor alineación */
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinea elementos al centro verticalmente */
+    gap: 20px;
+}
+
+/* Media Queries para hacer la página responsiva */
+@media (max-width: 1200px) {
+    .content-wrapper {
+        margin: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .subtitle {
+        font-size: 1em;
+    }
+
+    .content-wrapper {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    #darth-vader, #imperio-soldier, #luke-skywalker, #Caminante, #tie-fighter, #soldado-cualunque, #tanque, #x-wing {
+        font-size: 1.2em;
+        padding: 10px;
+    }
+
+    .container {
+        aspect-ratio: auto; /* Permite que la relación de aspecto se ajuste en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    .subtitle {
+        font-size: 0.9em;
+    }
+
+    .content-wrapper {
+        padding: 10px;
+        margin: 5px;
+    }
+
+    #darth-vader, #imperio-soldier, #luke-skywalker, #Caminante, #tie-fighter, #soldado-cualunque, #tanque, #x-wing {
+        font-size: 1em;
+        padding: 5px;
+    }
+
+    .container {
+        aspect-ratio: auto; /* Permite que la relación de aspecto se ajuste en pantallas más pequeñas */
+    }
+}
